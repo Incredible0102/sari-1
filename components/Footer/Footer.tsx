@@ -1,6 +1,9 @@
 import React from "react";
-import Image from "next/image";
 import GithubIcon from "../Icons/GithubIcon";
+import LinkedinIcon from "../Icons/LinkedinIcon";
+import DiscordIcon from "../Icons/DiscordIcon";
+import TelegramIcon from "../Icons/TelegramIcon";
+import SkypeIcon from "../Icons/SkypeIcon";
 const ClickableIcon = (props) => {
   return (
     <a href={props.href} className="" target={"_blank"} rel="noreferrer">
@@ -12,8 +15,18 @@ const ClickableIcon = (props) => {
     </a>
   );
 };
+const IconsData = [
+  { href: "https://github.com/antondev-123", Icon: GithubIcon },
+  {
+    href: "https://ua.linkedin.com/in/anton-sydor-34878b316",
+    Icon: LinkedinIcon,
+  },
+  // { href: "https://t.me/LioDev0308", Icon: TelegramIcon },
+  { href: "https://join.skype.com/invite/F9cgIK5RIkuy", Icon: SkypeIcon },
+  { href: "https://discord.gg/qWBuAKhX", Icon: DiscordIcon },
+];
 
-export default function Fotter(props: {
+export default function Footer(props: {
   githubUrl: string;
   hideSocialsInDesktop: boolean;
 }) {
@@ -25,12 +38,15 @@ export default function Fotter(props: {
           props.hideSocialsInDesktop ? "lg:hidden" : ""
         }`}
       >
-        <div className="group w-6 h-6 text-gray-400 hover:text-AAsecondary relative fill-current hover:cursor-pointer">
-          <Image src="/phone.svg" alt="Phone Icon" width={24} height={24} />
-          <span className="absolute top-0 left-full whitespace-nowrap pl-2 hidden bg-transparent rounded group-hover:block">
-            0813-9821-8203
-          </span>
-        </div>
+        {IconsData.map((iconData, index) => {
+          return (
+            <ClickableIcon
+              key={index}
+              href={iconData.href}
+              Icon={iconData.Icon}
+            />
+          );
+        })}
       </div>
       <a href={props.githubUrl} className="" target={"_blank"} rel="noreferrer">
         <div
@@ -38,7 +54,7 @@ export default function Fotter(props: {
     text-sm  space-y-2  "
         >
           <span className="group-hover:text-AAsecondary sm:text-sm text-xs">
-            Built by Sari Purwaningsih
+            Built by Anton Sydor
           </span>
 
           <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-AAsecondary">

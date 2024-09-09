@@ -211,7 +211,7 @@ export default function ThisCantBeReached() {
           </span>
           <span className="text-gray-500 text-md">
             <span className="font-bold">
-              www.sari-purwaningsih-portfolio.netlify.app{" "}
+            www.anton-sydor.netlify.app{" "}
             </span>
             unexpectedly{" "}
             {ShowText ? (
