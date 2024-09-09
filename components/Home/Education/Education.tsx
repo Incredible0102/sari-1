@@ -45,18 +45,19 @@ export default function Education() {
           >
             <div className="relative rounded w-full h-full col-span-7 ">
               <a
-                href="https://uesukraine.com/ternopil-national-economic-university/"
+                href="https://www.stiekalpataru.ac.id/"
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <div className="absolute w-full h-full rounded bg-AAprimary transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"></div>
+                <div
+                  className="absolute w-full h-full rounded bg-AAprimary 
+           transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"
+                ></div>
               </a>
 
               <Img
-                src={
-                  "https://uesukraine.com/wp-content/uploads/2016/09/Ternopil-National-Economic-University.jpg"
-                }
-                alt={"Ternopil National Economic University"}
+                src={"/Stiekalpataru.jpg"}
+                alt={"Sekolah Tinggi Ilmu Ekonomi Kalpataru"}
                 className={`w-full rounded h-full `}
               />
             </div>
@@ -70,10 +71,8 @@ export default function Education() {
                 <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
                 <Img
-                  src={
-                    "https://uesukraine.com/wp-content/uploads/2016/09/Ternopil-National-Economic-University.jpg"
-                  }
-                  alt={"Pace University"}
+                  src={"/Stiekalpataru.jpg"}
+                  alt={"Sekolah Tinggi Ilmu Ekonomi Kalpataru"}
                   className={`w-full h-full `}
                 />
               </div>
@@ -85,12 +84,12 @@ export default function Education() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <a
-                  href="https://uesukraine.com/ternopil-national-economic-university/"
+                  href="https://www.stiekalpataru.ac.id/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Ternopil National Economic University
+                    Sekolah Tinggi Ilmu Ekonomi Kalpataru
                   </span>
                 </a>
               </div>
@@ -98,25 +97,20 @@ export default function Education() {
                 <p className="text-gray-300 md:text-gray-400 text-left md:text-right ">
                   <span className="text-AAsecondary">
                     Bachelor&apos;s Degree
-                  </span>{" "}
-                  in
-                  <span className="text-AAsecondary"> Computer Science </span>
-                  <br />
-                  with a focus on{" "}
-                  <span className="text-AAsecondary">
-                    {" "}
-                    Software Engineering
                   </span>
                   <br />
-                  Graduated with honors.
+                  <span className="text-AAsecondary"> Computer Science </span>
                 </p>
               </div>
-              <ul className="flex flex-wrap w-full text-gray-300 md:text-gray-400 text-sm font-Text2 md:justify-end">
-                <span className="pr-4 z-10">September 2006 - September 2010</span>
+              <ul
+                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
+               text-sm font-Text2 md:justify-end"
+              >
+                <span className="pr-4 z-10">September 2009 - August 2013</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 <a
-                  href="https://uesukraine.com/ternopil-national-economic-university/"
+                  href="https://www.stiekalpataru.ac.id/"
                   target={"_blank"}
                   rel="noreferrer"
                 >

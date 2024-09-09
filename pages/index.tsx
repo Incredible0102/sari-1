@@ -64,7 +64,7 @@ export default function Home() {
   }, []);
 
   const meta = {
-    title: "Anton Sydor - Web Developer",
+    title: "Sari Purwaningsih - Web Developer",
     description: `I've been working on Web development for 10 years straight. Get in touch with me to know more.`,
     image: "/myPortfolio.png",
     type: "website",
@@ -77,10 +77,16 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`anton-sydor.netlify.app`} />
-        <link rel="canonical" href={`anton-sydor.netlify.app`} />
+        <meta
+          property="og:url"
+          content={`sari-purwaningsih-portfolio.netlify.app`}
+        />
+        <link
+          rel="canonical"
+          href={`sari-purwaningsih-portfolio.netlify.app`}
+        />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Anton Sydor" />
+        <meta property="og:site_name" content="Manu Arora" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
@@ -119,7 +125,7 @@ export default function Home() {
         {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
         {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
         {context.sharedState.finishedLoading ? (
-          <Footer githubUrl={"https://github.com/antondev-123/anton-sydor-portfolio"} hideSocialsInDesktop={true} />
+          <Footer githubUrl={""} hideSocialsInDesktop={true} />
         ) : (
           <></>
         )}

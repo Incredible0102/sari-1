@@ -1,7 +1,7 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
+
 export default function MyName(props: { finishedLoading: boolean }) {
   const router = useRouter();
   return (
@@ -41,7 +41,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-300 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
-        Anton Sydor
+        Sari Purwaningsih
       </motion.h1>
       <motion.h2
         initial={{ y: 10, opacity: 0 }}

@@ -2,30 +2,23 @@ import React from "react";
 import ArrowIcon from "../../../Icons/ArrowIcon";
 import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 
-export default function Company1() {
+export default function Company3() {
   const tasks = [
     {
-      text: "Created scalable, microservices-based systems using React, Next.js, Node.js, PostgreSQL, TypeScript, and Tailwind CSS",
+      text: "Created and enhanced websites using Angular, Node, Express.js and Material UI, increasing clients' online presence and sales",
+      keywords: ["Angular, Node, Express.js", "Material UI"],
+    },
+    {
+      text: "Coordinated a 6-person front end team to implement 30 responsive, user-friendly interfaces using React.js and CSS frameworks",
       keywords: [
-        "React",
-        "Node.js",
-        "Next.js",
-        "PostgreSQL",
-        "TypeScript",
-        "Tailwind CSS",
+        "30 responsive, user-friendly interfaces",
+        "React.js",
+        "CSS frameworks",
       ],
     },
     {
-      text: "Developed and designed front end web architecture with high responsiveness of applications using Next.js, TypeScript and Tailwind CSS",
-      keywords: ["Next.js", "TypeScript", "Tailwind CSS"],
-    },
-    {
-      text: "Leveraged React, Node.js Gatsby and Tailwind CSS, developing 5 websites",
-      keywords: ["React", "Node.js", "Gatsby", "Tailwind CSS"],
-    },
-    {
-      text: "Achieved security and authentication to web services using Oauth2 and client side using React-Redux-oauth2",
-      keywords: ["React-Redux-oauth2", "Oauth2"],
+      text: "Conducted in 30 code reviews and 12 pair programming sessions to continuously improve coding skills and knowledge",
+      keywords: ["30 code reviews", "12 pair programming sessions"],
     },
   ];
   return (
@@ -34,22 +27,22 @@ export default function Company1() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-            Senior Full Stack Developer{" "}
-            <span className="text-AAsecondary">(2 years 7 months)</span>
+            Junior Full Stack Developer{" "}
+            <span className="text-AAsecondary">(3 years)</span>
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">
-            July 2021 - February 2024
+            October 2014 - October 2017
           </span>
           <span
             className="font-mono text-xs text-AAsecondary hover:cursor-pointer"
             // set text size on style attribute
             style={{ fontSize: "0.6rem" }}
             onClick={() =>
-              window.open("https://www.inkordanclothing.com/", "_blank")
+              window.open("https://www.daehanglobal.com/", "_blank")
             }
           >
-            inkordanclothing.com
+            daehanglobal.com
           </span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">

@@ -1,29 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
-import GithubIcon from "../../Icons/GithubIcon";
-import LinkedinIcon from "../../Icons/LinkedinIcon";
-import DiscordIcon from "../../Icons/DiscordIcon";
-import SkypeIcon from "../../Icons/SkypeIcon";
 
-const IconClickableWithAnimation = (props) => {
-  return (
-    <motion.div
-      whileHover={{
-        y: -3,
-        transition: { duration: 0.1 },
-      }}
-      className=""
-    >
-      <a href={props.href} className="" target={"_blank"} rel="noreferrer">
-        <props.Icon
-          className={
-            "w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer"
-          }
-        />
-      </a>
-    </motion.div>
-  );
-};
 export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
   return (
     <>
@@ -40,25 +18,13 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
       >
         <div className="flex flex-col space-y-8 justify-center items-center">
           <div className="flex flex-col justify-center items-center space-y-5">
-            {/* Github Icon */}
-            <IconClickableWithAnimation
-              Icon={GithubIcon}
-              href={"https://github.com/antondev-123/"}
-            />
-            {/* Linkedin icon */}
-            <IconClickableWithAnimation
-              Icon={LinkedinIcon}
-              href={"https://ua.linkedin.com/in/anton-sydor-34878b316"}
-            />
-            {/* Discord Icon */}
-            <IconClickableWithAnimation
-              Icon={DiscordIcon}
-              href={"https://discord.gg/qWBuAKhX"}
-            />
-            <IconClickableWithAnimation
-              Icon={SkypeIcon}
-              href={"https://join.skype.com/invite/F9cgIK5RIkuy"}
-            />
+            {/* Phone Icon */}
+            <div className="group w-6 h-6 text-gray-400 hover:text-AAsecondary relative fill-current hover:cursor-pointer">
+              <Image src="/phone.svg" alt="Phone Icon" width={24} height={24} />
+              <span className="absolute top-0 left-full whitespace-nowrap pl-2 hidden bg-transparent rounded group-hover:block">
+                0813-9821-8203
+              </span>
+            </div>
           </div>
           <div className="h-28 w-0.5 bg-gray-400"></div>
         </div>
@@ -88,12 +54,12 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
             className=""
           >
             <a
-              href="mailto:sydoranton99@outlook.com"
+              href="mailto:sarilovekhansa@gmail.com"
               target={"_blank"}
               rel="noreferrer"
             >
               <span className=" font-Header tracking-wider text-gray-400 hover:text-AAsecondary hover:cursor-pointer">
-                sydoranton99<span className="text-AAsecondary">@</span>outlook
+                sarilovekhansa<span className="text-AAsecondary">@</span>gmail
                 <span className="text-AAsecondary">.</span>com
               </span>
             </a>

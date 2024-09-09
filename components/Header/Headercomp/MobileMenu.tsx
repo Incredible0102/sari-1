@@ -31,7 +31,10 @@ const MobileMenu = (props) => {
             className="flex flex-col text-center space-y-2"
           >
             <span className="text-AAsecondary text-xs font-mono">01.</span>
-            <span className="text-white font-Text2 text-sm sm:text-base hover:text-AAsecondary hover:cursor-pointer duration-300">
+            <span
+              className="text-white font-Text2 text-sm sm:text-base
+             hover:text-AAsecondary hover:cursor-pointer duration-300"
+            >
               About
             </span>
           </Link>
@@ -47,7 +50,10 @@ const MobileMenu = (props) => {
             <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">
               02.
             </span>
-            <span className="text-white font-Text2 text-sm sm:text-base hover:text-AAsecondary hover:cursor-pointer duration-300">
+            <span
+              className="text-white font-Text2 text-sm sm:text-base
+             hover:text-AAsecondary hover:cursor-pointer duration-300"
+            >
               Experience
             </span>
           </Link>
@@ -63,7 +69,10 @@ const MobileMenu = (props) => {
             <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">
               03.
             </span>
-            <span className="text-white font-Text2 text-sm sm:text-base hover:text-AAsecondary hover:cursor-pointer duration-300">
+            <span
+              className="text-white font-Text2 text-sm sm:text-base
+             hover:text-AAsecondary hover:cursor-pointer duration-300"
+            >
               Education
             </span>
           </Link>
@@ -77,7 +86,10 @@ const MobileMenu = (props) => {
             className="flex flex-col text-center space-y-2"
           >
             <span className="text-AAsecondary text-xs font-mono">04.</span>
-            <span className="text-white font-Text2 text-sm sm:text-base hover:text-AAsecondary hover:cursor-pointer duration-300">
+            <span
+              className="text-white font-Text2 text-sm sm:text-base
+             hover:text-AAsecondary hover:cursor-pointer duration-300"
+            >
               Work
             </span>
           </Link>
@@ -91,12 +103,18 @@ const MobileMenu = (props) => {
             className="flex flex-col text-center space-y-2"
           >
             <span className="text-AAsecondary text-xs font-mono">05.</span>
-            <span className="text-white font-Text2 text-sm sm:text-base hover:text-AAsecondary hover:cursor-pointer duration-300">
+            <span
+              className="text-white font-Text2 text-sm sm:text-base
+             hover:text-AAsecondary hover:cursor-pointer duration-300"
+            >
               Contact
             </span>
           </Link>
           <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
-            <button className="rounded border font-Text2  border-AAsecondary hover:bg-ResumeButtonHover py-2 sm:py-4 px-5 sm:px-10 text-xs text-AAsecondary">
+            <button
+              className="rounded border font-Text2  border-AAsecondary
+           hover:bg-ResumeButtonHover py-2 sm:py-4 px-5 sm:px-10 text-xs text-AAsecondary"
+            >
               Resume
             </button>
           </a>
