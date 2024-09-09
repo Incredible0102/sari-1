@@ -36,7 +36,7 @@ export default function AboutMe() {
             <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div>
               <Img
-                src={"/myPortfolio.png"}
+                src={"/OCPhoto.744169099.53372.jpeg"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
@@ -121,7 +121,7 @@ export default function AboutMe() {
             <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div>
               <Img
-                src={"/myPortfolio.png"}
+                src={"/OCPhoto.744169099.53372.jpeg"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
