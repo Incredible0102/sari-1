@@ -75,7 +75,7 @@ export default function Home() {
     <>
       <Head>
         <title>{meta.title}</title>
-        <meta name="robots" content="follow, index" />
+        <meta name="robots" content="noindex">
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
